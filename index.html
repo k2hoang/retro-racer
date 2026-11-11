@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Retro Racer</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect x='1' y='4' width='14' height='8' fill='%23e8403a'/><rect x='10' y='5' width='2' height='6' fill='%23a8e4ff'/><rect x='3' y='3' width='3' height='1' fill='%23111'/><rect x='10' y='3' width='3' height='1' fill='%23111'/><rect x='3' y='12' width='3' height='1' fill='%23111'/><rect x='10' y='12' width='3' height='1' fill='%23111'/></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="game" width="640" height="360"></canvas>
+<div id="err"></div>
+<script>
+  window.addEventListener('error', function (e) {
+    var d = document.getElementById('err');
+    if (!d) return;
+    d.style.display = 'block';
+    d.textContent += 'ERROR: ' + (e.message || e) + '  @ ' + (e.filename || '') + ':' + (e.lineno || '') + '\n';
+  });
+</script>
+<script src="js/core.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/input.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/font.js"></script>
+<script src="js/sprites.js"></script>
+<script src="js/tracks-data.js"></script>
+<script src="js/track.js"></script>
+<script src="js/car.js"></script>
+<script src="js/ai.js"></script>
+<script src="js/items.js"></script>
+<script src="js/race.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

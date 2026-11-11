@@ -1,0 +1,47 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  background: #000;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#game {
+  display: block;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  background: #000;
+}
+
+#err {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.85);
+  color: #ff7070;
+  font: 13px/1.4 monospace;
+  white-space: pre-wrap;
+  z-index: 10;
+}
+
+#selftest {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 8px;
+  max-height: 60%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.85);
+  color: #9fffa0;
+  font: 12px/1.35 monospace;
+  z-index: 9;
+}
